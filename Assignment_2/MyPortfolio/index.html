@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="path/to/font-mfizz/font-mfizz.css">
+    <title>My Portfolio</title>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9155ee001e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#1a1d2a] overflow-x-hidden z-30 min-w-fit sm:w-full">
+    <div
+      id="myhomepage"
+      class="bg-[url('./images/wp8064169-motion-graphics-wallpapers.jpg')]"
+    >
+      <nav
+        class="px-3 sm:px-12 flex justify-between z-50 items-center backdrop-blur-3xl transition-all duration-100 min-w-[140vw] sm:min-w-full"
+      >
+        <ul class="py-7 sm:py-0">
+          <b class="text-2xl text-[#2ee0ed]"
+            >Satani<span class="text-[#ced6f5]"> Kaushal</span></b
+          >
+        </ul>
+        <ul class="flex items-center py-6 text-[#2ee0ed]">
+          <ul class="flex items-center text-lg space-x-3 sm:space-x-16 sm:mx-7">
+            <li class="hover:underline">
+              <a
+                onClick="document.getElementById('myhomepage').scrollIntoView()"
+                >Home</a
+              >
+            </li>
+            <li class="hover:underline">
+              <a onClick="document.getElementById('work').scrollIntoView()"
+                >Portfolio</a
+              >
+            </li>
+            <li class="hover:underline">
+              <a onClick="document.getElementById('about').scrollIntoView()"
+                >About</a
+              >
+            </li>
+            <li class="hover:underline">
+              <a onClick="document.getElementById('reachme').scrollIntoView()"
+                >Reachout</a
+              >
+            </li>
+          </ul>
+        </ul>
+      </nav>
+      <section>
+        <div
+          class="text-[#ced6f5] sm:h-[90vh] h-[100vh] flex flex-col justify-center items-center text-center space-y-16 px-5 backdrop-blur-3xl overflow-x-hidden"
+        >
+          <div>
+            <img
+              id="img"
+              src="./images/image.png"
+              alt="my image"
+              width="200"
+              class="rounded-[50%] border-2 w-64 hover:scale-105 hover:shadow-2xl"
+            />
+            <p id="name" class="text-3xl font-extrabold pt-2">Satani Kaushal</p>
+          </div>
+          <div id="dev" class="text-xl font-bold backdrop-blur-md">
+            Hi ! I'm a
+            <p class="text-4xl font-extrabold hideDev text-[#2ee0ed]">
+              Front-end Developer
+            </p>
+          </div>
+          <div id="des">
+            <div class="hidePara max-w-md">
+              <p>
+                Seeking a role as a
+                <span class="text-[#2ee0ed]">front-end developer</span> so I can
+                use my thorough knowledge of programming
+                <span class="text-[#2ee0ed]">frameworks</span> and development
+                software.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- this is my work section  -->
+    <div
+      class="bg-[url('./images/wp8064169-motion-graphics-wallpapers.jpg')] bg-repeat"
+    >
+      <section
+        id="work"
+        class="text-[#ced6f5] flex flex-col space-y-56 h-max py-36 justify-center items-center backdrop-blur-3xl"
+      >
+        <!-- my note book -->
+        <div
+          class="flex flex-col space-y-7 sm:space-y-0 text-center sm:flex-row space-x-10 h-[60vh] justify-center items-center backdrop-blur-3xl"
+        >
+          <div
+            class="text-center rounded-3xl border-2 h-min overflow-hidden hover:scale-105 transition-all duration-100 hover:text-[#181920] hover:underline underline-offset-4 hover:bg-[#2ee0ed] slideInLeft"
+          ><a href="https://github.com/satanikaushal/mynotebook" target="_blank">
+            <div>
+              <img
+                src="./images/mynotebook.png"
+                alt="mynotebook"
+                width="350"
+                class=""
+              />
+            </div>
+            <div class="py-5 cursor-pointer">Go to mynotebook app</div></a>
+          </div>
+          <div class="space-y-5 max-w-screen-sm slideInRight">
+            <h2 class="text-3xl font-bold text-[#2ee0ed]">My Notebook App</h2>
+            <p>
+              In this application you can create, delete and update notes on the
+              cloud. I have made this app using
+              <span class="text-[#2ee0ed]"> React Js</span> and
+              <span class="text-[#2ee0ed]">Tailwind CSS</span> for Front-end and
+              <span class="text-[#2ee0ed]">Node Js</span>,
+              <span class="text-[#2ee0ed]">Express Js</span> and
+              <span class="text-[#2ee0ed]">Mongo DB</span> for Backend.
+            </p>
+          </div>
+        </div>
+        <!-- news app -->
+        <div
+          class="flex flex-col space-y-7 sm:space-y-0 text-center sm:flex-row space-x-10 h-[60vh] justify-center items-center backdrop-blur-3xl"
+        >
+          <div class="space-y-5 max-w-screen-sm slideInLeft">
+            <h2 class="text-3xl font-bold text-[#2ee0ed]">News App</h2>
+            <p>
+              In this Application you can read latest news. You can also filter
+              news with respect to their categories like Business, Sports,
+              Entertainment etc. Made it using
+              <span class="text-[#2ee0ed]">React Js</span> and
+              <span class="text-[#2ee0ed]">Tailwind CSS</span> for Front-end and
+              Used News API from
+              <span class="text-[#2ee0ed]">Rapidapi.com</span>
+            </p>
+          </div>
+          <div
+            class="text-center rounded-3xl border-2 h-min overflow-hidden hover:scale-105 transition-all duration-100 hover:text-[#181920] hover:underline underline-offset-4 hover:bg-[#2ee0ed] slideInRight"
+          ><a href="https://github.com/satanikaushal/news-app" target="_blank">
+            <div>
+              <img
+                src="./images/newapp.png"
+                alt="mynotebook"
+                width="350"
+                class="hover:scale-105"
+              />
+            </div>
+            <div class="py-5 cursor-pointer">Go to News App</div></a>
+          </div>
+        </div>
+        <!-- netflix clone -->
+        <div
+          class="flex flex-col space-y-7 sm:space-y-0 text-center sm:flex-row space-x-10 h-[60vh] justify-center items-center backdrop-blur-3xl"
+        >
+          <div
+            class="text-center rounded-3xl border-2 h-min overflow-hidden hover:scale-105 transition-all duration-100 hover:text-[#181920] hover:underline underline-offset-4 hover:bg-[#2ee0ed] slideInLeft"
+          ><a href="https://github.com/satanikaushal/netflix-clone" target="_blank">
+            <div>
+              <img
+                src="./images/netflixclone.png"
+                alt="mynotebook"
+                width="350"
+                class=""
+              />
+            </div>
+            <div class="py-5 cursor-pointer">Go to Netflix Clone</div></a>
+          </div>
+          <div class="space-y-5 max-w-screen-sm slideInRight">
+            <h2 class="text-3xl font-bold text-[#2ee0ed]">Netflix Clone</h2>
+            <p>
+              In this application you can see the UI replica of the official
+              Netflix App. You can see Latest Webshows, movies etc. I made it
+              using <span class="text-[#2ee0ed]"> React Js</span> and
+              <span class="text-[#2ee0ed]">Tailwind CSS</span> for Front-end and
+              and used Netflix API from
+              <span class="text-[#2ee0ed]">rapidapi.com</span>
+            </p>
+          </div>
+        </div>
+        <!-- Uber Eats Clone -->
+        <div
+          class="flex flex-col space-y-7 sm:space-y-0 text-center sm:flex-row space-x-10 h-[60vh] justify-center items-center backdrop-blur-3xl"
+        >
+          <div class="space-y-5 max-w-screen-sm slideInLeft">
+            <h2 class="text-3xl font-bold text-[#2ee0ed]">Ubers Eats Clone</h2>
+            <p>
+              I have created the
+              <span class="text-[#2ee0ed]">UI replica</span> of the official
+              Uber Eats website. I made it using raw
+              <span class="text-[#2ee0ed]">HTML</span> and
+              <span class="text-[#2ee0ed]">Javascript</span>. For styling I have
+              used the
+              <span class="text-[#2ee0ed]">Tailwind CSS</span> framework.
+            </p>
+          </div>
+          <div
+            class="text-center rounded-3xl border-2 h-min overflow-hidden hover:scale-105 transition-all duration-100 hover:text-[#181920] hover:underline underline-offset-4 hover:bg-[#2ee0ed] slideInRight"
+          >
+          <a href="https://github.com/satanikaushal/Uber-Eats-Clone" target="_blank">
+            <div>
+              <img
+                src="./images/uberEats.png"
+                alt="mynotebook"
+                width="350"
+                class="hover:scale-105"
+              />
+            </div>
+            <div class="py-5 cursor-pointer">Go to Uber Eats Clone</div></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- this is about section -->
+    <div
+      class="bg-[url('./images/wp8064169-motion-graphics-wallpapers.jpg')] bg-repeat"
+    >
+      <section
+        id="about"
+        class="text-[#ced6f5] flex flex-col space-y-56 h-max py-36 justify-center items-center backdrop-blur-3xl"
+      >
+        <!-- Qualifications -->
+        <div
+          class="border-2 p-14 rounded-3xl space-y-8 slideInRight hover:scale-105 transition-all duration-100 ease-in-out"
+        >
+          <div class="text-[#2ee0ed] text-center font-semibold text-2xl pb-5">
+            Qualifications
+          </div>
+          <div class="space-y-2">
+            <h2 class="text-[#2ee0ed] font-semibold text-2xl">
+              > B.Tech in Computer Engineering
+            </h2>
+            <p>Silver Oak University, Pursuing - Sem II</p>
+          </div>
+          <div class="space-y-2">
+            <h2 class="text-[#2ee0ed] font-semibold text-2xl">> HSC (GHSEB)</h2>
+            <p>Shakti School Rajkot, 2021-2022</p>
+          </div>
+          <div class="space-y-2">
+            <h2 class="text-[#2ee0ed] font-semibold text-2xl">> SSC (GHSEB)</h2>
+            <p>Dayamayi Mata School Surendrangar, 2019-2020</p>
+          </div>
+        </div>
+        <!-- currentlly pursuing -->
+        <div
+          class="flex flex-col space-y-7 sm:space-y-0 text-center sm:flex-row space-x-10 h-[60vh] justify-center items-center backdrop-blur-3xl"
+        >
+          <div
+            class="text-center rounded-3xl border-2 h-min overflow-hidden hover:scale-105 transition-all duration-100 hover:text-[#181920] hover:underline underline-offset-4 hover:bg-[#2ee0ed] slideInLeft"
+          >
+            <div>
+              <img
+                src="./images/silveroak.jpeg"
+                alt="mynotebook"
+                width="350"
+                class=""
+              />
+            </div>
+          </div>
+          <div class="space-y-5 max-w-screen-sm slideInRight">
+            <h2 class="text-3xl font-bold text-[#2ee0ed]">
+              Silver Oak University
+            </h2>
+            <p>
+              Currently pursuing <span class="text-[#2ee0ed]"> B.Tech</span> in
+              <span class="text-[#2ee0ed]">Computer Engineering</span> at
+              <span class="text-[#2ee0ed]">Silver Oak University</span>.
+            </p>
+          </div>
+        </div>
+        <!-- skills -->
+        <div
+          class="border-2 p-14 rounded-3xl space-y-8 slideInRight hover:scale-105 transition-all duration-100 ease-in-out"
+        >
+          <div class="text-[#2ee0ed] text-center font-semibold text-2xl pb-5">
+            Skills
+          </div>
+          <div class="flex flex-wrap justify-center items-center max-w-xl">
+            <i class="fa-brands fa-html5 text-9xl mx-3 my-3"></i>
+            <i class="fa-brands fa-css3-alt text-9xl mx-3 my-3"></i>
+            <i class="fa-brands fa-square-js text-9xl mx-3 my-3"></i>
+            <i class="fa-brands fa-bootstrap text-9xl mx-3 my-3"></i>
+            <i class="fa-brands fa-react text-8xl mx-3 my-3"></i>
+            <i class="fa-brands fa-node text-8xl mx-3 my-3"></i>
+            <i class="icon-mongodb text-xl text-center font-extrabold mx-3 my-3">MONGO <br>DB<i class="fa-sharp fa-solid fa-leaf mx-2"></i></i>
+            <i class="fa-brands fa-git-alt text-8xl mx-3 my-3"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- this is my reach me out section  -->
+    <div
+      class="bg-[url('./images/wp8064169-motion-graphics-wallpapers.jpg')] bg-repeat"
+    >
+      <section
+        id="reachme"
+        class="text-[#ced6f5] flex flex-col space-y-56 px-0 h-max py-36 justify-center items-center backdrop-blur-3xl"
+      >
+      <div class="border-2 flex flex-col w-full sm:w-1/2 rounded-3xl p-8 justify-center">
+        <div class="text-[#2ee0ed] text-center font-semibold text-2xl pb-5">
+          Reach me out
+        </div>
+        <div class="flex sm:flex-row justify-around">
+          <div><i class="fa-solid fa-envelope mx-3"></i>kaushalsatani@gmail.com</div>
+          <div><i class="fa-solid fa-phone"></i>
+            +91 9408400274</div>
+        </div>
+        <div class="flex flex-row justify-center">
+          <div><a href="https://www.linkedin.com/in/satani-kaushal-a4481b25b/" target="_blank"><i class="fa-brands fa-linkedin text-5xl mx-3 my-6"></i></a></div>
+          <div><a href="https://github.com/satanikaushal" target="_blank"><i class="fa-brands fa-square-github text-5xl mx-3 my-6"></i></a></div>
+        </div>
+      </div>
+      </section>
+    </div>
+    <script>
+      const observer = new IntersectionObserver((enteries) => {
+        enteries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("typewriter");
+          } else {
+            entry.target.classList.remove("typewriter");
+          }
+        });
+      });
+      const hiddenElements = document.querySelectorAll(".hideDev");
+      hiddenElements.forEach((el) => observer.observe(el));
+
+      const observer1 = new IntersectionObserver((enteries) => {
+        enteries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          } else {
+            entry.target.classList.remove("show");
+          }
+        });
+      });
+      const hiddenElements1 = document.querySelectorAll(".hidePara");
+      hiddenElements1.forEach((el) => observer1.observe(el));
+
+      window.addEventListener(
+        "scroll",
+        () => {
+          document.body.style.setProperty(
+            "--scroll",
+            window.pageYOffset /
+              (document.body.offsetHeight - window.innerHeight)
+          );
+        },
+        false
+      );
+
+      const observer2 = new IntersectionObserver((enteries) => {
+        enteries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("AnimateLeft");
+          } else {
+            entry.target.classList.remove("AnimateLeft");
+          }
+        });
+      });
+      const hiddenElements2 = document.querySelectorAll(".slideInLeft");
+      hiddenElements2.forEach((el) => observer2.observe(el));
+
+      const observer3 = new IntersectionObserver((enteries) => {
+        enteries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("AnimateRight");
+          } else {
+            entry.target.classList.remove("AnimateRight");
+          }
+        });
+      });
+      const hiddenElements3 = document.querySelectorAll(".slideInRight");
+      hiddenElements3.forEach((el) => observer3.observe(el));
+    </script>
+  </body>
+</html>
